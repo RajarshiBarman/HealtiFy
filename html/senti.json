@@ -1,0 +1,32 @@
+{
+    "diseases": {
+        "Seasonal Infectious Disease": {
+            "negative": 1104,
+            "positive": 12
+        },
+        "Seasonal Disease": {
+            "negative": 1212,
+            "positive": 36
+        },
+        "Influenza": {
+            "negative": 1308,
+            "positive": 18
+        },
+        "Dengue": {
+            "negative": 1230,
+            "positive": 12
+        },
+        "Malaria": {
+            "negative": 666,
+            "positive": 624
+        },
+        "Japanese Encephalitis": {
+            "negative": 1272,
+            "positive": 66
+        },
+        "Chikungunya": {
+            "negative": 434,
+            "positive": 0
+        }
+    }
+}

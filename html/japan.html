@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+       
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+             <img src="/assets/img/favicon/favicon.png" alt="" width="30px">
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">SID</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">Dashboard</div>
+              </a>
+            </li>
+
+            
+
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Disease</span>
+            </li>
+            <li class="menu-item">
+              <a href="dengue.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Dengue</div>
+              </a>
+              </li>
+
+              <li class="menu-item">
+              <a href="influenza.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Influenza</div>
+              </a>
+              </li>
+
+              <li class="menu-item">
+              <a href="japan.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Japanese Encephalitis</div>
+              </a>
+              </li>           
+           
+
+              <li class="menu-header small text-uppercase">
+                <span class="menu-header-text">Sentiment Analysis</span>
+              </li>
+  
+              <li class="menu-item">
+                <a href="senti.html" class="menu-link">
+                  <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                  <div data-i18n="Account Settings">Reddit Data</div>
+                </a>
+                </li>
+
+                
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Account</span>
+            </li>
+
+            <li class="menu-item">
+              <a href="pages-account-settings-account.html" class="menu-link ">
+                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+                <div data-i18n="Account Settings">Profile</div>
+              </a>
+              </li>
+
+            
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          
+          <!-- Search Bar -->
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Place this tag where you want the button to render. -->
+                
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    
+                    
+                    
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+          <!-- / Search Bar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+              <div class="row">
+                <div class="col-lg-8 mb-4 order-0">
+                  <div class="card">
+                    <div class="d-flex align-items-end row">
+                      <div class="col-sm-7">
+                        <div class="card-body">
+                          <h5 class="card-title text-primary">Japanese Encephalitis</h5>
+                          <p class="mb-4">
+                            This is a viral infection primarily transmitted through mosquitoes, particularly in rural and agricultural areas of Asia. The causative agent, the Japanese encephalitis virus (JEV), can lead to severe inflammation of the brain. Symptoms range from mild flu-like manifestations to more severe conditions, including high fever, headaches, neck stiffness, and, in extreme cases, neurological complications.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 text-center text-sm-left">
+                        <div class="card-body pb-0 px-0 px-md-4">
+                          <img
+                            src="../assets/img/illustrations/man-with-laptop-light.png"
+                            height="140"
+                            alt="View Badge User"
+                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                            data-app-light-img="illustrations/man-with-laptop-light.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 order-1">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img
+                                src="../assets/img/icons/unicons/india.png"
+                                alt="chart success"
+                                class="rounded"
+                              />
+                            </div>
+                            <div class="dropdown">
+                              <!--<button
+                                class="btn p-0"
+                                type="button"
+                                id="cardOpt3"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                              </div>-->
+                            </div>
+                          </div>
+                          <span class="fw-semibold d-block mb-1">States</span>
+                          <h3 class="card-title mb-2">28</h3>
+                          <!--<small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img
+                                src="../assets/img/icons/unicons/india_ut.png"
+                                alt="Credit Card"
+                                class="rounded"
+                              />
+                            </div>
+                            <div class="dropdown">
+                              
+                            </div>
+                          </div>
+                          <span class="fw-semibold d-block mb-1">Union Territories</span>
+                          <h3 class="card-title mb-2">8</h3>
+                          <!--<small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Total Revenue -->
+                <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                  <div class="card">
+                    <div class="row row-bordered g-0">
+                      <h5 class="card-header m-0 me-2 pb-3">Top States affected by Japanese Encephalitis in 2023</h5>
+                      <div class="col-md-12">
+                          <img src="/assets/charts/je1.png" alt="" style="margin: 5px 80px;">
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--/ Total Revenue -->
+                <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                  <div class="row">
+                    <style>
+                      .scrollable-dropdown {
+                        max-height: 200px; /* Adjust the maximum height as needed */
+                        overflow-y: auto;
+                      }
+                    </style>
+                    
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img src="../assets/img/icons/unicons/case-study.png" alt="Credit Card" class="rounded" />
+                            </div>
+                            <div class="dropdown">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="cardOpt4"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end scrollable-dropdown" aria-labelledby="cardOpt4">
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Andhra Pradesh', 0)">Andhra Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Arunachal Pradesh', 4)">Arunachal Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Assam', 500)">Assam</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Bihar', 43)">Bihar</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Chhattisgarh', 12)">Chhattisgarh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Delhi', 0)">Delhi</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Goa', 0)">Goa</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Haryana', 0)">Haryana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Jharkhand', 30)">Jharkhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Karnataka', 18)">Karnataka</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Kerala', 2)">Kerala</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Madhya Pradesh', 23)">Madhya Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Maharashtra', 0)">Maharashtra</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Manipur', 59)">Manipur</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Meghalaya', 23)">Meghalaya</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Nagaland', 14)">Nagaland</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Odisha', 17)">Odisha</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Punjab', 0)">Punjab</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Tamil Nadu', 17)">Tamil Nadu</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Telangana', 0)">Telangana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Tripura', 7)">Tripura</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Uttar Pradesh', 35)">Uttar Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('Uttarakhand', 6)">Uttarakhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateValue('West Bengal', 18)">West Bengal</a>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="d-block mb-1" id="stateName">Assam Cases</span>
+                          <h3 id="dynamicValue" class="card-title text-nowrap mb-2">500</h3>
+                          <h4 class="text-success fw-semibold"></i> Year 2023</h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                      function updateValue(state, newValue) {
+                        document.getElementById('stateName').innerText = state + ' Cases';
+                        document.getElementById('dynamicValue').innerText = newValue;
+                      }
+                    </script>
+                    
+                    
+                    
+                    <style>
+                      .scrollable-dropdown {
+                        max-height: 200px; /* Adjust the maximum height as needed */
+                        overflow-y: auto;
+                      }
+                    </style>
+                    
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img src="../assets/img/icons/unicons/tombstone.png" alt="Credit Card" class="rounded" />
+                            </div>
+                            <div class="dropdown">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="cardOpt1"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu scrollable-dropdown" aria-labelledby="cardOpt1">
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Andhra Pradesh', 0)">Andhra Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Arunachal Pradesh', 1)">Arunachal Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Assam', 34)">Assam</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Bihar', 8)">Bihar</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Chhattisgarh', 0)">Chhattisgarh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Delhi', 0)">Delhi</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Goa', 0)">Goa</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Haryana', 0)">Haryana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Jharkhand', 0)">Jharkhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Karnataka', 0)">Karnataka</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Kerala', 0)">Kerala</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Madhya Pradesh', 0)">Madhya Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Maharashtra', 0)">Maharashtra</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Manipur', 1)">Manipur</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Meghalaya', 0)">Meghalaya</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Nagaland', 0)">Nagaland</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Odisha', 0)">Odisha</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Punjab', 0)">Punjab</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Tamil Nadu', 2)">Tamil Nadu</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Telangana', 0)">Telangana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Tripura', 0)">Tripura</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Uttar Pradesh', 0)">Uttar Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('Uttarakhand', 0)">Uttarakhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateDeath('West Bengal', 2)">West Bengal</a>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <span class="fw-semibold d-block mb-1" id="stateNameDeaths">Assam Deaths</span>
+                          <h3 id="dynamicValueDeaths" class="card-title mb-2">34</h3>
+                          <h4 class="text-danger fw-semibold">Year 2023</h4>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                      function updateDeath(state, newValue) {
+                        document.getElementById('stateNameDeaths').innerText = state + ' Deaths';
+                        document.getElementById('dynamicValueDeaths').innerText = newValue;
+                      }
+                    </script>
+                    
+                    <!-- </div>
+    <div class="row"> -->
+                    <div class="col-12 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                            <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                              <div class="card-title">
+                                <h5 class="text-nowrap mb-2">Report 1</h5>
+                                <span class="badge bg-label-warning rounded-pill">Year 2023</span>
+                              </div>
+                              <div class="mt-sm-auto">
+                                <h3 class="mb-0">It is to be noted that North Eastern states are most affected by Japanese Encephalitis due to high number of cases recorded there.</h3>
+                              </div>
+                            </div>
+                            <div id="profileReportChart"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">        
+                
+                <!-- Total Revenue -->
+                <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                  <div class="card">
+                    <div class="row row-bordered g-0">
+                      <h5 class="card-header m-0 me-2 pb-3">Japanese Encephalitis Cases in the last 5 years</h5>
+                      <div class="col-md-12">
+                          <img src="/assets/charts/je2.png" alt="" style="margin: 5px 0px;">
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--/ Total Revenue -->
+                <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                  <div class="row">
+                    
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img src="../assets/img/icons/unicons/calendar.png" alt="Credit Card" class="rounded" />
+                            </div>
+                            <div class="dropdown">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="cardOpt4"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYear(2023)">2023</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYear(2022)">2022</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYear(2021)">2021</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYear(2020)">2020</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYear(2019)">2019</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYear(2018)">2018</a>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="d-block mb-1">Year</span>
+                          <h3 id="dynamicYear" class="card-title text-nowrap mb-2">2023</h3>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                      // Global variable to store the selected year
+                      let selectedYear = 2023;
+                    
+                      // Function to update the selected year and the displayed content
+                      function selectYear(year) {
+                        selectedYear = year;
+                        document.getElementById('dynamicYear').innerText = year;
+                      }
+                    </script>
+                    
+
+                    <style>
+                      .scrollable-dropdown {
+                        max-height: 200px; /* Adjust the maximum height as needed */
+                        overflow-y: auto;
+                      }
+                    </style>
+                    
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img src="../assets/img/icons/unicons/case-study.png" alt="Credit Card" class="rounded" />
+                            </div>
+                            <div class="dropdown">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="cardOpt1"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu scrollable-dropdown" aria-labelledby="cardOpt1">
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Andhra Pradesh')">Andhra Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Arunachal Pradesh')">Arunachal Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Assam')">Assam</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Bihar')">Bihar</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Chhattisgarh')">Chhattisgarh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Delhi')">Delhi</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Goa')">Goa</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Haryana')">Haryana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Jharkhand')">Jharkhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Karnataka')">Karnataka</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Kerala')">Kerala</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Madhya Pradesh')">Madhya Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Maharashtra')">Maharashtra</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Manipur')">Manipur</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Meghalaya')">Meghalaya</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Nagaland')">Nagaland</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Odisha')">Odisha</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Punjab')">Punjab</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Tamil Nadu')">Tamil Nadu</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Telangana')">Telangana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Tripura')">Tripura</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Uttar Pradesh')">Uttar Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('Uttarakhand')">Uttarakhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="updateContent('West Bengal')">West Bengal</a>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="fw-semibold d-block mb-1" id="stateNameCases">Assam Cases in 2023</span>
+                          <h3 id="dynamicValueCases" class="card-title mb-2">500</h3>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                      // Example data
+                      const data = {
+                         "Andhra Pradesh": {2023: 0, 2022: 3, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Arunachal Pradesh": {2023: 4, 2022: 5, 2021: 0, 2020: 68, 2019: 0, 2018: 0},
+                          "Assam": {2023: 500, 2022: 456, 2021: 320, 2020: 642, 2019: 509, 2018: 0},
+                          "Bihar": {2023: 43, 2022: 24, 2021: 38, 2020: 29, 2019: 135, 2018: 74},
+                          "Chhattisgarh": {2023: 12, 2022: 19, 2021: 5, 2020: 12, 2019: 53, 2018: 0},
+                          "Delhi": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Goa": {2023: 0, 2022: 1, 2021: 0, 2020: 0, 2019: 1, 2018: 3},
+                          "Haryana": {2023: 0, 2022: 1, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Jharkhand": {2023: 30, 2022: 86, 2021: 180, 2020: 44, 2019: 112, 2018: 66},
+                          "Karnataka": {2023: 18, 2022: 33, 2021: 20, 2020: 17, 2019: 33, 2018: 35},
+                          "Kerala": {2023: 2, 2022: 2, 2021: 0, 2020: 0, 2019: 11, 2018: 5},
+                          "Madhya Pradesh": {2023: 23, 2022: 70, 2021: 29, 2020: 11, 2019: 42, 2018: 0},
+                          "Maharashtra": {2023: 0, 2022: 2, 2021: 0, 2020: 2, 2019: 35, 2018: 6},
+                          "Manipur": {2023: 59, 2022: 66, 2021: 13, 2020: 29, 2019: 343, 2018: 57},
+                          "Meghalaya": {2023: 23, 2022: 69, 2021: 2, 2020: 38, 2019: 191, 2018: 90},
+                          "Nagaland": {2023: 14, 2022: 11, 2021: 0, 2020: 0, 2019: 10, 2018: 1},
+                          "Odisha": {2023: 17, 2022: 31, 2021: 18, 2020: 14, 2019: 195, 2018: 143},
+                          "Punjab": {2023: 0, 2022: 2, 2021: 0, 2020: 0, 2019: 10, 2018: 0},
+                          "Tamil Nadu": {2023: 17, 2022: 28, 2021: 37, 2020: 47, 2019: 231, 2018: 147},
+                          "Telangana": {2023: 0, 2022: 1, 2021: 0, 2020: 2, 2019: 55, 2018: 20},
+                          "Tripura": {2023: 7, 2022: 14, 2021: 25, 2020: 19, 2019: 61, 2018: 59},
+                          "Uttar Pradesh": {2023: 35, 2022: 124, 2021: 153, 2020: 100, 2019: 235, 2018: 323},
+                          "Uttarakhand": {2023: 6, 2022: 7, 2021: 1, 2020: 4, 2019: 9, 2018: 0},
+                          "West Bengal": {2023: 18, 2022: 54, 2021: 47, 2020: 41, 2019: 82, 2018: 140},
+                        // Add more states and their data
+                      };
+                    
+                      // Function to update the content based on the selected state and year
+                      function updateContent(state) {
+                        const selectedYear = document.getElementById('dynamicYear').innerText;
+                        const cases = data[state][selectedYear];
+                    
+                        document.getElementById('stateNameCases').innerText = `${state} Cases in ${selectedYear}`;
+                        document.getElementById('dynamicValueCases').innerText = `${cases.toLocaleString()}`;
+                      }
+                    </script>
+                    
+
+                    
+                    <!-- </div>
+    <div class="row"> -->
+                    <div class="col-12 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                            <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                              <div class="card-title">
+                                <h5 class="text-nowrap mb-2">Report on Cases of Japanese Encephalitis</h5>
+                                <span class="badge bg-label-warning rounded-pill">Year Wise</span>
+                              </div>
+                              <div class="mt-sm-auto">
+                                <h3 class="mb-0">Compared to previous years, there is a stiff decrease in japanese encephalitis but people need to be careful about it.</h3>
+                              </div>
+                            </div>
+                            <div id="profileReportChart"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+               <div class="row">        
+                
+                <!-- Total Revenue -->
+                <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                  <div class="card">
+                    <div class="row row-bordered g-0">
+                      <h5 class="card-header m-0 me-2 pb-3">Death toll due to Japanese Encephalitis in the last 5 years</h5>
+                      <div class="col-md-12">
+                          <img src="/assets/charts/je4.png" alt="" style="margin: 5px 0px;">
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--/ Total Revenue -->
+                <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                  <div class="row">
+                    
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img src="../assets/img/icons/unicons/calendar.png" alt="Credit Card" class="rounded" />
+                            </div>
+                            <div class="dropdown">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="cardOpt4"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYearDeath(2023)">2023</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYearDeath(2022)">2022</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYearDeath(2021)">2021</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYearDeath(2020)">2020</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYearDeath(2019)">2019</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectYearDeath(2018)">2018</a>
+                              </div>
+                            </div>
+                          </div>
+                          <span class="d-block mb-1">Year</span>
+                          <!-- Display the selected year dynamically -->
+                          <h3 id="dynamicValueDeath" class="card-title text-nowrap mb-2"></h3>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                      // Global variable to store the selected year for deaths
+                      let selectedDeathYear = 2023;
+                    
+                      // Function to update the selected year and the displayed deaths
+                      function selectYearDeath(year) {
+                        selectedDeathYear = year;
+                        document.getElementById('dynamicValueDeath').innerText = year;
+                      }
+                    
+                      // Initial display of the selected year
+                      document.getElementById('dynamicValueDeath').innerText = selectedDeathYear;
+                    </script>
+                    
+                    
+
+                    <div class="col-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title d-flex align-items-start justify-content-between">
+                            <div class="avatar flex-shrink-0">
+                              <img src="../assets/img/icons/unicons/tombstone.png" alt="Credit Card" class="rounded" />
+                            </div>
+                            <div class="dropdown">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="cardOpt1"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu scrollable-dropdown" aria-labelledby="cardOpt1">
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Andhra Pradesh')">Andhra Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Arunachal Pradesh')">Arunachal Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Assam')">Assam</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Bihar')">Bihar</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Chhattisgarh')">Chhattisgarh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Delhi')">Delhi</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Goa')">Goa</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Haryana')">Haryana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Jharkhand')">Jharkhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Karnataka')">Karnataka</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Kerala')">Kerala</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Madhya Pradesh')">Madhya Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Maharashtra')">Maharashtra</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Manipur')">Manipur</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Meghalaya')">Meghalaya</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Nagaland')">Nagaland</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Odisha')">Odisha</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Punjab')">Punjab</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Tamil Nadu')">Tamil Nadu</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Telangana')">Telangana</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Tripura')">Tripura</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Uttar Pradesh')">Uttar Pradesh</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('Uttarakhand')">Uttarakhand</a>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="selectState('West Bengal')">West Bengal</a>
+                                <!-- Add other states dynamically based on your data -->
+                              </div>
+                            </div>
+                          </div>
+                          <span class="fw-semibold d-block mb-1" id="selectedState">Andhra Pradesh Deaths in 2023</span>
+                          <h3 class="card-title mb-2" id="dynamicValue1">0</h3>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script>
+                      // Update the selected state and value dynamically
+                      function selectState(state) {
+                        document.getElementById('selectedState').innerText = state + ' Deaths in ' + selectedDeathYear;
+                        // Use your data to fetch the corresponding value based on the selected state and year
+                        // For now, let's assume you have a data object like this:
+                        const data = {
+                          "Andhra Pradesh": {2023: 0, 2022: 2, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Arunachal Pradesh": {2023: 1, 2022: 2, 2021: 0, 2020: 0, 2019: 2, 2018: 0},
+                          "Assam": {2023: 34, 2022: 96, 2021: 40, 2020: 51, 2019: 161, 2018: 94},
+                          "Bihar": {2023: 8, 2022: 9, 2021: 7, 2020: 2, 2019: 27, 2018: 11},
+                          "Chhattisgarh": {2023: 0, 2022: 2, 2021: 0, 2020: 4, 2019: 5, 2018: 0},
+                          "Delhi": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Goa": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Haryana": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Jharkhand": {2023: 0, 2022: 0, 2021: 2, 2020: 0, 2019: 3, 2018: 0},
+                          "Karnataka": {2023: 0, 2022: 1, 2021: 1, 2020: 0, 2019: 4, 2018: 5},
+                          "Kerala": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 2, 2018: 2},
+                          "Madhya Pradesh": {2023: 0, 2022: 0, 2021: 4, 2020: 3, 2019: 1, 2018: 0},
+                          "Maharashtra": {2023: 0, 2022: 0, 2021: 0, 2020: 1, 2019: 10, 2018: 1},
+                          "Manipur": {2023: 1, 2022: 6, 2021: 2, 2020: 4, 2019: 6, 2018: 3},
+                          "Meghalaya": {2023: 0, 2022: 1, 2021: 1, 2020: 1, 2019: 9, 2018: 6},
+                          "Nagaland": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Odisha": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 1, 2018: 0},
+                          "Punjab": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Tamil Nadu": {2023: 2, 2022: 0, 2021: 2, 2020: 1, 2019: 1, 2018: 0},
+                          "Telangana": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 0, 2018: 0},
+                          "Tripura": {2023: 0, 2022: 0, 2021: 0, 2020: 0, 2019: 2, 2018: 0},
+                          "Uttar Pradesh": {2023: 0, 2022: 4, 2021: 5, 2020: 9, 2019: 21, 2018: 25},
+                          "Uttarakhand": {2023: 0, 2022: 0, 2021: 0, 2020: 2, 2019: 0, 2018: 0},
+                          "West Bengal": {2023: 2, 2022: 7, 2021: 6, 2020: 4, 2019: 11, 2018: 35},
+                        };
+
+
+                        const selectedYear = document.getElementById('dynamicValueDeath').innerText;
+                        const cases = data[state][selectedDeathYear];
+                    
+                        document.getElementById('selectedState').innerText = `${state} Cases in ${selectedDeathYear}`;
+                        document.getElementById('dynamicValue1').innerText = `${cases.toLocaleString()}`;
+                      }
+                    </script>
+                    
+                    <!-- </div>
+    <div class="row"> -->
+                    <div class="col-12 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                            <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                              <div class="card-title">
+                                <h5 class="text-nowrap mb-2">Report on Death toll</h5>
+                                <span class="badge bg-label-warning rounded-pill">Year Wise</span>
+                              </div>
+                              <div class="mt-sm-auto">
+                                <h3 class="mb-0">It is to be noted that deaths due to Japanese Encephalitis have decreased a lot. It is due to the fact that less people are getting affected by it and people are cautious.</h3>
+                              </div>
+                            </div>
+                            <div id="profileReportChart"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+             
+
+              
+
+              
+              
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  by
+                  <a href="#" target="_blank" class="footer-link fw-bolder">Rajarshi Barman</a>
+                </div>
+                
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+   
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="../assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="../assets/js/dashboards-analytics.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
